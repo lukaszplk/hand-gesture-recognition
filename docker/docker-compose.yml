@@ -1,0 +1,40 @@
+version: '3.8'
+
+services:
+  # FastAPI service
+  api:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: hand-detector-api
+    ports:
+      - "8001:8001"
+    volumes:
+      - ../outputs:/app/outputs
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python api/main.py
+    restart: unless-stopped
+    networks:
+      - hand-detector-net
+
+  # Gradio web interface
+  gradio:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: hand-detector-gradio
+    ports:
+      - "7861:7861"
+    volumes:
+      - ../outputs:/app/outputs
+    environment:
+      - PYTHONUNBUFFERED=1
+    command: python api/gradio_app.py
+    restart: unless-stopped
+    networks:
+      - hand-detector-net
+
+networks:
+  hand-detector-net:
+    driver: bridge

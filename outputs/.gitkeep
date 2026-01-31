@@ -1,0 +1,4 @@
+# Keep this directory for output files
+*.mp4
+*.jpg
+*.png
