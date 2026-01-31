@@ -1,4 +1,4 @@
-# Hand Detector Project - MediaPipe 0.10.32 Update Summary
+# Hand Gesture Recognition - MediaPipe 0.10.32 Update Summary
 
 ## Status: ✅ FULLY FUNCTIONAL
 
@@ -89,7 +89,7 @@ Once running:
 ## Project Structure
 
 ```
-hand_detector/
+hand_gesture_recognition/
 ├── src/
 │   ├── hand_detector.py      ✅ Updated for MediaPipe 0.10.32
 │   ├── gesture_recognizer.py ✅ Working

@@ -1,6 +1,6 @@
-# 🖐️ Hand Detection & Gesture Recognition
+# 🖐️ Hand Gesture Recognition
 
-A production-ready real-time hand detection and gesture recognition system using MediaPipe and deep learning. Features webcam support, REST API, interactive web interface, and Docker deployment.
+A production-ready real-time hand gesture recognition system using MediaPipe and deep learning. Features webcam support, REST API, interactive web interface, and Docker deployment.
 
 ![Python](https://img.shields.io/badge/python-3.8%2B-blue)
 ![MediaPipe](https://img.shields.io/badge/MediaPipe-latest-green)
@@ -63,8 +63,8 @@ hand_detector/
 
 1. **Clone the repository**
 ```bash
-git clone <repository-url>
-cd hand_detector
+git clone https://github.com/lukaszplk/hand_gesture_recognition.git
+cd hand_gesture_recognition
 ```
 
 2. **Create virtual environment**

@@ -8,7 +8,7 @@ from gesture_recognizer import GestureRecognizer
 import numpy as np
 
 print("="*60)
-print("HAND DETECTOR - QUICK TEST")
+print("HAND GESTURE RECOGNITION - QUICK TEST")
 print("="*60)
 
 # Test detector initialization

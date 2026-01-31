@@ -1,4 +1,4 @@
-# Hand Detection & Gesture Recognition - Quick Start
+# Hand Gesture Recognition - Quick Start
 
 ## Installation
 

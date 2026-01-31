@@ -1,4 +1,4 @@
-"""FastAPI service for hand detection and gesture recognition."""
+"""FastAPI service for hand gesture recognition."""
 
 from fastapi import FastAPI, File, UploadFile, WebSocket, HTTPException
 from fastapi.responses import StreamingResponse, JSONResponse
@@ -26,7 +26,7 @@ from config import API_HOST, API_PORT, API_TITLE, API_VERSION, GESTURES
 app = FastAPI(
     title=API_TITLE,
     version=API_VERSION,
-    description="API for real-time hand detection and gesture recognition"
+    description="API for real-time hand gesture recognition"
 )
 
 # Add CORS middleware

@@ -128,7 +128,7 @@ def process_video_frame(video_frame):
 with gr.Blocks(title="Hand Detection & Gesture Recognition") as demo:
     gr.Markdown(
         """
-        # 🖐️ Hand Detection & Gesture Recognition
+        # 🖐️ Hand Gesture Recognition
         
         Detect hands, count fingers, and recognize gestures in real-time!
         
@@ -286,7 +286,7 @@ with gr.Blocks(title="Hand Detection & Gesture Recognition") as demo:
 
 
 if __name__ == "__main__":
-    print(f"Starting Hand Detection & Gesture Recognition Interface...")
+    print(f"Starting Hand Gesture Recognition Interface...")
     print(f"Server will run on: http://localhost:{GRADIO_PORT}")
     print(f"Press Ctrl+C to stop")
     

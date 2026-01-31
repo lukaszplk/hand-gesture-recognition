@@ -1,7 +1,7 @@
-# Hand Detector Project - Complete Structure
+# Hand Gesture Recognition - Complete Structure
 
 ```
-hand_detector/
+hand_gesture_recognition/
 │
 ├── 📁 src/                          # Core application code
 │   ├── __init__.py                  # Package initialization
