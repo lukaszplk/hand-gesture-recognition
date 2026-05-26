@@ -212,16 +212,14 @@ class HandDetector:
         """
         fingers = []
         
-        # Thumb (special case - check horizontal position)
+        # Thumb (special case - compare tip to IP joint, landmark 2)
         if hand_label == "Right":
-            # For right hand, thumb up means tip is to the right of joint
-            if landmarks[FINGER_TIP_IDS[0]][0] > landmarks[FINGER_TIP_IDS[0] - 1][0]:
+            if landmarks[FINGER_TIP_IDS[0]][0] > landmarks[FINGER_TIP_IDS[0] - 2][0]:
                 fingers.append(True)
             else:
                 fingers.append(False)
         else:
-            # For left hand, thumb up means tip is to the left of joint
-            if landmarks[FINGER_TIP_IDS[0]][0] < landmarks[FINGER_TIP_IDS[0] - 1][0]:
+            if landmarks[FINGER_TIP_IDS[0]][0] < landmarks[FINGER_TIP_IDS[0] - 2][0]:
                 fingers.append(True)
             else:
                 fingers.append(False)
